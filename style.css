@@ -1,0 +1,329 @@
+@font-face {
+    font-family: "barlowcondensed";
+    src: url(Barlow,Barlow_Condensed/Barlow_Condensed/BarlowCondensed-Medium.ttf);
+}
+
+@font-face{
+    font-family:"barlow";
+    src:url(Barlow,Barlow_Condensed/Barlow/Barlow-Light.ttf);
+}
+
+*{
+    font-family: "barlowcondensed","barlow";
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+    position: relative;
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 400px;
+    background: hsl(207, 33%, 95%);
+    top: -40px;
+    right: 0;
+    border: none;
+    border-radius: 0 0 0 50px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 0 10%;
+    position: relative;
+    z-index:1000;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index:1000;
+    overflow-x: hidden;
+    margin-top: 100px;
+}
+
+.login-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+a{
+    font-family:"barlowcondensed" ;
+    font-weight: 500;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:not(:last-child){
+    color: hsl(230, 29%, 20%);
+}
+
+a:last-child{
+    color: hsl(231, 7%, 65%);
+}
+
+.dot{
+    border: none;
+    border-radius: 20px;
+    background: hsl(231, 7%, 65%);
+    width: 6px;
+    height: 6px;
+}
+
+.hero-img{
+    width: 100%;
+    transform: translateX(150px);
+}
+
+.first-div-main{
+    display: flex;
+    flex-direction: row ;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+b{
+    font-family: "barlowcondensed";
+    background: hsl(230, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 30px;
+    padding: 3px 10px;
+}
+
+@font-face{
+    font-family:'barlowcondensedlight';
+    src:url(Barlow,Barlow_Condensed/Barlow_Condensed/BarlowCondensed-Light.ttf);
+}
+
+.monograph{
+    font-size: 18px;
+    color: hsl(231, 7%, 65%);
+    font-family: "barlowcondensedlight";
+    letter-spacing: 2px;
+    margin: 0 0 0 10px ;
+}
+
+h1{
+    font-variant-caps: all-petite-caps;
+    font-size: 60px;
+    color: hsl(230, 29%, 20%);
+    margin: 0 0 30px 0;
+}
+
+.main-first-sect{
+    width: 40%;
+    padding-left: 10%;
+}
+
+@font-face {
+    font-family: "barlowcondensedregular";
+    src: url(Barlow,Barlow_Condensed/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+}
+
+.txt{
+    font-family: "barlowcondensedregular";
+    font-size: 18px;
+    color:hsl(230, 29%, 20%);
+    width: 50%;
+}
+
+.barlow{
+    color: hsl(231, 7%, 65%);
+    font-size: 18px;
+    font-family: "barlow";
+    letter-spacing: 2px;
+    font-variant-caps: all-petite-caps;
+}
+
+.btn{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 100%, 68%);
+    border: none;
+    border-radius:5px;
+    padding: 10px 20px;
+    font-variant-caps:all-petite-caps;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-right: 15px;
+}
+
+.btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.botom-main{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+
+.hamburger{
+    display: none;
+}
+
+hr{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+.hamburger-sub{
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        padding: 0 10%;
+        position: relative;
+        z-index:1000;
+    }
+
+    body{
+        display:flex;
+        flex-direction: column;
+        margin: 40px 0 0 0;
+        position: relative;
+    }
+
+    .nav{
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px; 
+        background: hsl(0, 0%, 100%);
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px 0 hsl(231, 7%, 65%);
+        line-height: 40px;
+        position: absolute;
+        top: 60px;
+        align-self: center;
+        right: 8%;
+        z-index: 10000;
+    }
+
+    .nav-sub{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px; 
+        background: hsl(0, 0%, 100%);
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px 0 hsl(231, 7%, 65%);
+        line-height: 40px;
+        position: absolute;
+        top: 60px;
+        align-self: center;
+        right: 8%;
+        z-index: 10000;
+    }
+
+    .hamburger{
+        display: flex;
+    }   
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index:1;
+        overflow-x: hidden;
+        margin-top: 100px;
+    }
+
+    .hero-img{
+        width: 120%;
+        transform: translateX(1%);
+    }
+
+    .main-first-sect{
+        width: 100%;
+        padding-left: 10%;
+        margin-top:40px;
+    }
+
+    h1{
+        font-variant-caps: all-petite-caps;
+        font-size: 50px;
+        color: hsl(230, 29%, 20%);
+        margin: 0 0 30px 0;
+    }
+
+    .barlow{
+        color: hsl(231, 7%, 65%);
+        font-size: 18px;
+        font-family: "barlow";
+        letter-spacing: 0px;
+        font-variant-caps: all-petite-caps;
+    }
+
+    .txt{
+        font-family: "barlowcondensedregular";
+        font-size: 18px;
+        color:hsl(230, 29%, 20%);
+        width: 65%;
+    }
+
+    .dot{
+        display: none;
+    }
+
+    .login-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+
+    hr{
+        display: flex;
+        background-color: hsl(231, 7%, 65%);
+        width: 100%;
+    }
+}
